@@ -1,0 +1,22 @@
+/*Here "a" is both the side length of cube and radius of sphere*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,area,area1,area2,volume;
+    float area3,volume2;
+    scanf ("%d",&a);
+    area=(a*a);
+    area1=(6*a*a);
+    area2=(4*a*a);
+    volume=(a*a*a);
+    area3=(4*3.14159*a*a);
+    volume2=((4/3)*3.14159*a*a*a);
+    printf (" Area of one side of cube = %.d",area);
+    printf (" \n Total surface area of cube = %.d",area1);
+    printf (" \n Curved surface area of cube = %.d",area2);
+    printf (" \n Volume of Cube = %d",volume);
+    printf (" \n Total surface area Sphere of radius a = %.2f",area3);
+    printf (" \n Volume of sphere of radius a = %.2f",volume2);
+    return 0;
+}
